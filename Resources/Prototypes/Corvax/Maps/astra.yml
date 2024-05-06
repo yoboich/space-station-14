@@ -1,7 +1,7 @@
 - type: gameMap
   id: CorvaxAstra
   mapName: 'Astra Station'
-  mapPath: /Maps/corvax_astra.yml 
+  mapPath: /Maps/corvax_astra.yml
   minPlayers: 40
   stations:
     Astra:
@@ -63,7 +63,7 @@
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 4, 5 ]
-
+            SAI: [ 1, 1 ] # backmen-SAI
 
 
 

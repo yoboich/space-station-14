@@ -116,6 +116,14 @@ namespace Content.Shared.Roles
 
         [DataField("extendedAccessGroups")]
         public IReadOnlyCollection<ProtoId<AccessGroupPrototype>> ExtendedAccessGroups { get; private set; } = Array.Empty<ProtoId<AccessGroupPrototype>>();
+
+// start-backmen
+        /// <summary>
+        /// For e.g. prisoners, they'll never use their latejoin spawner.
+        /// </summary>
+        [DataField("alwaysUseSpawner")]
+        public bool AlwaysUseSpawner { get; private set; } = false;
+// end-backmen
     }
 
     /// <summary>
