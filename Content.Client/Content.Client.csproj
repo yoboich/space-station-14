@@ -26,6 +26,7 @@
     <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Client\Content.Corvax.Interfaces.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Backmen\" />
     <Folder Include="Spawners\" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
