@@ -21,6 +21,7 @@ public sealed partial class ExplosionResistanceComponent : Component
     ///     The explosive resistance coefficient, This fraction is multiplied into the total resistance.
     /// </summary>
     [DataField("damageCoefficient")]
+    [Access(typeof(ExplosionSystem), typeof(Backmen.Blob.BlobCoreSystem))] // backmen: blob
     public float DamageCoefficient = 1;
 
     /// <summary>
