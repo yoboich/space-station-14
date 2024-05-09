@@ -156,27 +156,40 @@ public sealed partial class StoreSystem
                 return;
         }
 
-        //check that we have enough money
-        foreach (var currency in listing.Cost)
-        {
-            if (!component.Balance.TryGetValue(currency.Key, out var balance) || balance < currency.Value)
-            {
-                return;
-            }
-        }
-
         if (!IsOnStartingMap(uid, component))
             component.RefundAllowed = false;
 
-        //subtract the cash
-        foreach (var (currency, value) in listing.Cost)
+        if (!HandleBankTransaction(uid, component, msg, listing)) // backmen: currency
         {
-            component.Balance[currency] -= value;
+            //check that we have enough money
+            foreach (var currency in listing.Cost)
+            {
+                if (!component.Balance.TryGetValue(currency.Key, out var balance) || balance < currency.Value)
+                {
+                    return;
+                }
+            }
 
-            component.BalanceSpent.TryAdd(currency, FixedPoint2.Zero);
+            //subtract the cash
+            foreach (var (currency, value) in listing.Cost)
+            {
+                component.Balance[currency] -= value;
 
-            component.BalanceSpent[currency] += value;
+                component.BalanceSpent.TryAdd(currency, FixedPoint2.Zero);
+
+                component.BalanceSpent[currency] += value;
+            }
+            // start-backmen: currency
         }
+        else
+        {
+            foreach (var (currency, value) in listing.Cost)
+            {
+                component.BalanceSpent.TryAdd(currency, FixedPoint2.Zero);
+                component.BalanceSpent[currency] += value;
+            }
+        }
+        // end-backmen: currency
 
         //spawn entity
         if (listing.ProductEntity != null)

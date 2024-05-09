@@ -24,6 +24,11 @@ public sealed partial class DepartmentPrototype : IPrototype
      DataField("roles", customTypeSerializer: typeof(PrototypeIdListSerializer<JobPrototype>))]
     public List<string> Roles = new();
 
+// start-backmen: currency
+    [DataField("accountNumber")]
+    public string? AccountNumber { get; private set; }
+// end-backmen: currency
+
     /// <summary>
     /// Whether this is a primary department or not.
     /// For example, CE's primary department is engineering since Command has primary: false.

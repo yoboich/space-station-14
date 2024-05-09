@@ -13,3 +13,10 @@
     - MobMouseCancer
     playersPerCarrierBlob: 30
     maxCarrierBlob: 3
+
+- type: entity
+  id: WageScheduler
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: WageSchedulerRule

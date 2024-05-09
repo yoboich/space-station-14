@@ -96,5 +96,8 @@ public enum LogType
     ChatRateLimited = 87,
     AtmosTemperatureChanged = 88,
     DeviceNetwork = 89,
-    StoreRefund = 90
+    StoreRefund = 90,
+
+    //backmen
+    Transactions = 120,
 }

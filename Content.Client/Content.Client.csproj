@@ -29,6 +29,11 @@
     <Folder Include="Backmen\" />
     <Folder Include="Spawners\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Backmen\Economy\WageConsole\UI\BonusWageWindow.xaml">
+      <DependentUpon>BonusWageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
 </Project>

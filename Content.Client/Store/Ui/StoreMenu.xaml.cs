@@ -160,7 +160,7 @@ public sealed partial class StoreMenu : DefaultWindow
             if (!currency.ContainsKey(type.Key))
                 return false;
 
-            if (currency[type.Key] < type.Value)
+            if (!CanBuyFromBank && currency[type.Key] < type.Value) // backmen: currency
                 return false;
         }
         return true;
@@ -248,4 +248,13 @@ public sealed partial class StoreMenu : DefaultWindow
     {
         public string? Id;
     }
+
+    // begin: backmen-currency
+    public bool CanBuyFromBank = false;
+    public void SetCanBuyFromBank(bool hasComponent)
+    {
+        CanBuyFromBank = hasComponent;
+    }
+
+    // end: backmen-currency
 }

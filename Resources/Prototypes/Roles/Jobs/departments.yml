@@ -6,6 +6,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  accountNumber: 1315 #backmen: currency
 
 - type: department
   id: Civilian
@@ -31,6 +32,7 @@
   - Visitor
   - Zookeeper
   - ServiceWorker
+  accountNumber: 1316 #backmen: currency
 
 - type: department
   id: Command
@@ -48,6 +50,7 @@
   - Quartermaster
   primary: false
   weight: 100
+  accountNumber: 1317 #backmen: currency
 
 - type: department
   id: Engineering
@@ -58,6 +61,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  accountNumber: 1318 #backmen: currency
 
 - type: department
   id: Medical
@@ -70,6 +74,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  accountNumber: 1319 #backmen: currency
 
 - type: department
   id: Security
@@ -83,6 +88,7 @@
   - Pilot # Corvax-Pilot
   - Detective
   - Warden
+  accountNumber: 1320  #backmen: currency
 
 - type: department
   id: Science
@@ -92,6 +98,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  accountNumber: 1321  #backmen: currency
 
 - type: department
   id: Specific
@@ -105,3 +112,4 @@
   - Psychologist
   - SAI
   primary: false
+  accountNumber: 1322  #backmen: currency

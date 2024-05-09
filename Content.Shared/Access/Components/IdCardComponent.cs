@@ -40,4 +40,10 @@ public sealed partial class IdCardComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool BypassLogging;
+
+    // start-backmen: currency
+    [DataField("storedBankAccountNumber")]
+    [AutoNetworkedField]
+    public string? StoredBankAccountNumber;
+    // end-backmen: currency
 }
