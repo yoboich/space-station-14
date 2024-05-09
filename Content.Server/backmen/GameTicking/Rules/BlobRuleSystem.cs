@@ -108,10 +108,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
         return true;
     }
 
-    [ValidatePrototypeId<AlertLevelPrototype>]
     private const string StationGamma = "gamma";
-
-    [ValidatePrototypeId<AlertLevelPrototype>]
     private const string StationSigma = "sigma";
 
     private void CheckChangeStage(Entity<BlobCoreComponent> blobCore, EntityUid stationUid, BlobRuleComponent blobRuleComp)

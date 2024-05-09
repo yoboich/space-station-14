@@ -235,6 +235,7 @@
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
+  - type: BorgAINT
 
 - type: entity
   id: BaseBorgChassisSyndicate

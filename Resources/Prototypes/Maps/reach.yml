@@ -33,4 +33,4 @@
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 1, 2 ]
             Passenger: [ -1, -1 ]
-
+            SAI: [ 1, 1 ] # backmen-SAI

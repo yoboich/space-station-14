@@ -94,3 +94,4 @@
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 4, 5 ]
+            SAI: [ 1, 1 ] # backmen-SAI

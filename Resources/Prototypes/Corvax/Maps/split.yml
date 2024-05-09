@@ -63,6 +63,7 @@
             # cargo
             SalvageSpecialist: [ 1, 1 ]
             CargoTechnician: [ 3, 3 ]
+            SAI: [ 1, 1 ] # backmen-SAI
     Payback:
       stationProto: NanotrasenStationNoArrivals
       components:
@@ -118,6 +119,7 @@
             # cargo
             SalvageSpecialist: [ 1, 1 ]
             CargoTechnician: [ 2, 3 ]
+            SAI: [ 1, 1 ] # backmen-SAI
     Lumber:
       stationProto: NanotrasenStationNoArrivals
       components:
@@ -176,3 +178,4 @@
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 4 ]
+            SAI: [ 1, 1 ] # backmen-SAI

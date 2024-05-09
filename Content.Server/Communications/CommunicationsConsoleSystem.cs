@@ -255,6 +255,13 @@ namespace Content.Server.Communications
                 {
                     author = $"{id.Comp.FullName} ({CultureInfo.CurrentCulture.TextInfo.ToTitleCase(id.Comp.JobTitle ?? string.Empty)})".Trim();
                 }
+
+                //start-backmen: sai
+                if (HasComp<Shared.Backmen.StationAI.StationAIComponent>(mob))
+                {
+                    author = MetaData(mob).EntityName;
+                }
+                //end-backmen: sai
             }
 
             comp.AnnouncementCooldownRemaining = comp.Delay;
