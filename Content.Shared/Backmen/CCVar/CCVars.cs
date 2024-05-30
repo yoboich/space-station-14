@@ -7,6 +7,8 @@ namespace Content.Shared.Backmen.CCVar;
 [CVarDefs]
 public sealed class CCVars
 {
+    public static readonly CVarDef<bool>
+        GameDiseaseEnabled = CVarDef.Create("game.disease", true, CVar.SERVERONLY);
     /*
      * Blob
      */

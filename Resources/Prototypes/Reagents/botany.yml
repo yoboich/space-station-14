@@ -204,6 +204,16 @@
             Caustic: 1
     Gas:
       effects:
+      # start-backmen: Disease
+      - !type:ChemMiasmaPoolSource
+        conditions:
+        - !type:OrganType
+          type: Rat
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Ammonia
+          min: 1
+      # end-backmen: Disease
       - !type:HealthChange
         conditions:
         - !type:OrganType
